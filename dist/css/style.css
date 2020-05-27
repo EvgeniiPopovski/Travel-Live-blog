@@ -388,6 +388,12 @@ body {
   padding: 0;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #575757;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -402,7 +408,7 @@ li {
 
 .section_header {
   margin: 0 auto;
-  max-width: 270px;
+  width: max-content;
   background-color: #E79E5A;
   font-family: 'Gilda Display', serif;
   color: white;
@@ -457,7 +463,6 @@ li {
 }
 
 .header__content-blog-title {
-  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -487,7 +492,6 @@ li {
 }
 
 .header__content-social {
-  width: 23%;
   display: flex;
   justify-content: flex-end;
   height: 35px;
@@ -556,7 +560,7 @@ li {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  margin: 70px auto 40px;
+  margin: 0px auto 40px;
   position: relative;
 }
 
@@ -607,6 +611,7 @@ li {
   font-family: 'Gilda Display', serif;
   font-size: 24px;
   color: #222222;
+  text-align: center;
 }
 
 .section-outter .slaider__small-pict {
@@ -671,9 +676,9 @@ li {
 
 .latest-posts__posts-container .latest-posts__post {
   width: 31%;
-  height: 380px;
+  height: auto;
   background-color: white;
-  margin-bottom: 25px;
+  margin: 0px 0px 20px 0px;
   box-shadow: 0px 2px 4px #CDCCCC;
 }
 
@@ -691,7 +696,6 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 165px;
   padding: 20px;
 }
 
@@ -723,6 +727,39 @@ li {
   line-height: 32px;
   color: #525252;
   width: 90%;
+}
+
+.latest__posts_paginator {
+  font-family: 'Montserrat', sans-serif;
+  color: #525252;
+  font-size: 14px;
+  letter-spacing: 0.778px;
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest__posts_paginator_item {
+  background-color: white;
+  border: 1px solid #DCDCDC;
+  padding: 0;
+  margin: 0;
+}
+
+.latest__posts_paginator_item a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 9px 14px;
+}
+
+.latest__posts_paginator_item a:visited {
+  color: inherit;
+}
+
+.paginator_active {
+  background-color: #E79E5A;
+  color: white;
 }
 
 .post-1 {
@@ -765,4 +802,289 @@ li {
 
 /*  INSTA FEED */
 
+.insta-feed__container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.insta-feed__container .insta-feed__item {
+  margin: 0px 0px 4px 0px;
+}
+
+.insta-feed__container .insta-feed__item img {
+  width: auto;
+  height: auto;
+}
+
 /*  / INSTA FEED */
+
+/*  FOOTER */
+
+.footer__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.section-outter.footer {
+  background-color: #575757;
+  margin-bottom: 0px;
+  color: white;
+}
+
+.section-outter.footer .footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 75px;
+}
+
+.section-outter.footer .footer-container .footer__about-us {
+  flex-basis: 31.5%;
+}
+
+.section-outter.footer .footer-container .footer__about-us_subtitle {
+  font-family: 'Gilda Display', serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 26px;
+}
+
+.section-outter.footer .footer-container .footer__contacts_email-updates {
+  flex-basis: 31.5%;
+  margin-bottom: 35px;
+}
+
+.section-outter.footer .footer-container .footer__contacts_email-updates .footer__contacts_form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.section-outter.footer .footer-container .footer__contacts_email-updates .footer__contacts_form .footer__email {
+  flex-grow: 1;
+  background-color: #575757;
+  border: 1px solid #c6c6c6;
+  padding: 15px;
+  font-family: 'Gilda Display', serif;
+  font-size: 14px;
+  color: white;
+}
+
+.section-outter.footer .footer-container .footer__contacts_email-updates .footer__contacts_form .footer__email::placeholder {
+  font-family: 'Gilda Display', serif;
+  font-size: 12px;
+  color: #c6c6c6;
+}
+
+.section-outter.footer .footer-container .footer__contacts_email-updates .footer__contacts_form .footer__email_submit {
+  flex-shrink: 1;
+  background-color: #575757;
+  border: 1px solid #c6c6c6;
+  border-left: none;
+}
+
+.section-outter.footer .footer-container .footer__socials_icons {
+  display: flex;
+}
+
+.section-outter.footer .footer-container .footer__socials_icons a {
+  margin-right: 5px;
+}
+
+.section-outter.footer .footer-container .footer__post-previev {
+  flex-basis: 31.5%;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.section-outter.footer .footer-container .footer__post-previev .footer__post-previev-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.section-outter.footer .footer-container .footer__post-previev_img {
+  width: 75px;
+  height: 65px;
+  margin-right: 15px;
+}
+
+.section-outter.footer .footer-container .footer__post-previev_description {
+  font-family: 'Gilda Display', serif;
+  margin: 0;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 22px;
+}
+
+.section-outter.footer .footer-container .footer__post-previev_description-date {
+  font-family: 'Gilda Display', serif;
+  margin: 0 0;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 22px;
+}
+
+.section-outter.footer .footer__copyright {
+  width: max-content;
+  margin: 0 auto;
+  height: 115px;
+  border-top: 1px solid #787878;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-outter.footer .footer__copyright p span {
+  color: #E79E5A;
+}
+
+/*   / FOOTER */
+
+@media (max-width: 992px) {
+  .insta-feed__container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .insta-feed__container .insta-feed__item {
+    margin: 0px 5px 4px 0px;
+    width: 32.6%;
+  }
+
+  .insta-feed__container .insta-feed__item img {
+    width: 100%;
+  }
+
+  .section-outter {
+    padding: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer__about-us,
+  .footer__contacts,
+  .footer__post-previev {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-outter {
+    padding: 15px;
+  }
+
+  .section-outter .slaider__big-slide {
+    height: 520px;
+  }
+
+  .section-outter .slaider__small-pict {
+    height: 175px;
+  }
+
+  .section-outter .slaider__small-pict .content {
+    margin: 70px 0px 0px 20px;
+  }
+
+  .latest-posts__posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: flex-start;
+  }
+
+  .latest-posts__posts-container .latest-posts__post {
+    width: 49%;
+    height: auto;
+  }
+
+  .latest-posts__posts-container .latest-posts__post:nth-of-type(2n+1) {
+    margin: 0px 10px 20px 0px;
+  }
+
+  .insta-feed__container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .insta-feed__container .insta-feed__item {
+    margin: 0px auto 4px;
+    width: 32%;
+  }
+
+  .insta-feed__container .insta-feed__item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-outter {
+    padding: 15px;
+  }
+
+  .latest-posts__posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: flex-start;
+  }
+
+  .latest-posts__posts-container .latest-posts__post {
+    width: 49%;
+    height: auto;
+  }
+
+  .latest-posts__posts-container .latest-posts__post:nth-of-type(2n+1) {
+    margin: 0px 10px 20px 0px;
+  }
+
+  .insta-feed__container {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .insta-feed__container .insta-feed__item {
+    margin: 0px 5px 4px 0px;
+    width: 48%;
+  }
+
+  .insta-feed__container .insta-feed__item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 574px) {
+  .section-outter {
+    padding: 15px;
+  }
+
+  .section-outter .slaider__small-pict {
+    height: 150px;
+  }
+
+  .section-outter .slaider__small-pict .content {
+    margin: 30px 0px 0px 10px;
+  }
+
+  .latest-posts__posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: flex-start;
+  }
+
+  .latest-posts__posts-container .latest-posts__post {
+    width: 100%;
+    height: auto;
+  }
+}

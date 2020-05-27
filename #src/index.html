@@ -10,7 +10,7 @@
 
 <body>
     <!-- HEADER + NAVIGATION -->
-    <header class="header">
+    <header class="section-outter header">
         <!--Ограничивает контенет по ширине-->
         <div class="section-inner">
             <div class="header__content">
@@ -107,7 +107,8 @@
                             <a href="#" class="autor">John Doe</a>
                             <span class="post-date">15 Sep, 2018</span>
                         </div>
-                        <div class="latest-posts__post-content_subtitle">Similique fugit occaecati dolor ipsum ducimus</div>
+                        <div class="latest-posts__post-content_subtitle">Similique fugit occaecati dolor ipsum ducimus
+                        </div>
                     </div>
                 </div>
 
@@ -210,34 +211,133 @@
 
             </div>
             <div class="latest__posts_paginator">
-                <a href="" class="latest__posts_paginator_item">PREVIOUS</a>
-                <a href="" class="latest__posts_paginator_item">1</a>
-                <a href="" class="latest__posts_paginator_item">2</a>
-                <a href="" class="latest__posts_paginator_item">3</a>
-                <a href="" class="latest__posts_paginator_item"></a>
-                <a href="" class="latest__posts_paginator_item"></a>
-                <a href="" class="latest__posts_paginator_item"></a>
+                <button class="latest__posts_paginator_item"><a href="#" ">PREVIOUS</a></button> 
+                <button class=" latest__posts_paginator_item"><a href="#" ">1</a></button> 
+                <button class=" latest__posts_paginator_item paginator_active"><a href="#" ">2</a></button> 
+                <button class=" latest__posts_paginator_item"><a href="#" ">3</a></button> 
+                <button class=" latest__posts_paginator_item"><a href="#" ">...</a></button> 
+                <button class=" latest__posts_paginator_item"><a href="#" ">6</a></button> 
+                <button class=" latest__posts_paginator_item"><a href="#" ">NEXT</a></button> 
             </div>
         </div>
     </section>
 
-    <!-- / SECTION LATEST POSTS -->
+    <!-- / SECTION LATEST POSTS -->  
 
     <!-- INSTAGRAM FEED -->
-    <section class="section-outter insta-feed">
+    <section class=" section-outter insta-feed">
         <div class="section-inner">
-            <h2 class="section_header">INSTAGRAM FEED</h2>
+            <h2 class="section_header insta-feed">INSTAGRAM FEED</h2>
             <div class="insta-feed__container">
-
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-1.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-2.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-3.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-4.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-5.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-6.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-7.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
+                <div class="insta-feed__item">
+                    <img src="./img/instaFeed/blog-thumb-8.webp"
+                        alt="insta-feed-post" class="ininsta-feed__item_post">
+                </div>
             </div>
         </div>
-        INSTA FEED
     </section>
     <!-- / INSTAGRAM FEED -->
 
     <!-- FOOTER -->
-    <footer class="footer">
-        FOOTER
+    <footer class="section-outter footer">
+        <div class="section-inner">
+            <div class="footer-container">
+                <div class="footer__about-us">
+                    <div class="footer__title">ABOUT US</div>
+                    <div class="footer__about-us_subtitle">Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                        voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                    </div>
+
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts_email-updates">
+                        <div class="footer__title">NEVER MISS ANY UPDATE</div>
+                        <form class="footer__contacts_form">
+                            <input class="footer__email" placeholder="Enter Your Email Address" type="text">
+                            <button class="footer__email_submit">
+                                <img src="./img/assets/mail_logo.svg" width="50" height="40" alt="email-logo">
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="footer__socials">
+                        <div class="footer__title">FOLLOW US</div>
+                        <div class="footer__socials_icons">
+                            <a href="#">
+                                <div class="header__content-social-insta"></div>
+                            </a>
+                            <a href="#">
+                                <div class="header__content-social-twitter"></div>
+                            </a>
+                            <a href="#">
+                                <div class="header__content-social-youtube"></div>
+                            </a>
+                            <a href="#">
+                                <div class="header__content-social-facebook"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__latest-posts">
+                    <div class="footer__title">LATESTS POSTS</div>
+                    <div class="footer__post-previev">
+                        <img src="./img/footer/blog-thumb-1.webp" alt="footer-img" class="footer__post-previev_img">
+                        <div class="footer__post-previev-content">
+                            <p class="footer__post-previev_description">Eos voluptatem aut doloremque</p>
+                            <p class="footer__post-previev_description-date">17 July, 2018</p>
+                        </div>
+                    </div>
+                    <div class="footer__post-previev">
+                        <img src="./img/footer/blog-thumb-2.webp" alt="footer-img" class="footer__post-previev_img">
+                        <div class="footer__post-previev-content">
+                            <p class="footer__post-previev_description">Fugiat in cupiditate iusto dolor dolorem</p>
+                            <p class="footer__post-previev_description-date">17 July, 2018</p>
+                        </div>
+                    </div>
+                    <div class="footer__post-previev">
+                        <img src="./img/footer/blog-thumb-3.webp" alt="footer-img" class="footer__post-previev_img">
+                        <div class="footer__post-previev-content">
+                            <p class="footer__post-previev_description">Ut adipisci ullam sit iste vel voluptatem</p>
+                            <p class="footer__post-previev_description-date">17 July, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>Copyright 2018 Mahmuda | Site design by <span>Graphicslot</span> </p>
+            </div>
+        </div>
+
     </footer>
     <!-- FOOTER -->
 

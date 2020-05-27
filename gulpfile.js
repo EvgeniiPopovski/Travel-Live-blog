@@ -132,7 +132,6 @@ let build = gulp.series(doDelete, gulp.parallel(js, css, html, images , fonts))
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 
-
 exports.fonts = fonts;
 exports.images = images;
 exports.js = js;
