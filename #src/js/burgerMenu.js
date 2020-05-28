@@ -15,4 +15,3 @@ function openMenu() {
 menuBtn.addEventListener("click", openMenu);
 closeBTN.addEventListener("click", openMenu);
 
-;
