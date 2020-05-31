@@ -1,383 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Travel Live Blog</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Travel Live Blog</title>
-</head>
+	<body>
+		<!-- HEADER + NAVIGATION -->
+		<header class="section-outter header">
+			<!--Ограничивает контенет по ширине-->
+			<div class="section-inner">
+				<div class="header__content">
+					<div class="header__content-date">
+						Welcome To Our Lifestyle Blog Today:<span class="date-now">
+							17 July, 2018</span
+						>
+					</div>
+					<div class="header__content-blog-title">
+						<h1 class="blog-title">
+							<span class="mah">mah</span><span class="muda">muda</span>
+						</h1>
+						<span class="header__content-blog-subtitle">Creative Live Style Blog</span>
+					</div>
+					<div class="header__content-social">
+						<a href="#">
+							<div class="header__content-social-insta"></div>
+						</a>
+						<a href="#">
+							<div class="header__content-social-twitter"></div>
+						</a>
+						<a href="#">
+							<div class="header__content-social-youtube"></div>
+						</a>
+						<a href="#">
+							<div class="header__content-social-facebook"></div>
+						</a>
+					</div>
+				</div>
+				<nav class="header__main-navigation">
+					<p class="burger_menu-btn-opener">
+						MENU
+					</p>
 
-<body>
-    <!-- HEADER + NAVIGATION -->
-    <header class="section-outter header">
-        <!--Ограничивает контенет по ширине-->
-        <div class="section-inner">
-            <div class="header__content">
-                <div class="header__content-date">
-                    Welcome To Our Lifestyle Blog Today:<span class="date-now"> 17 July, 2018</span>
-                </div>
-                <div class="header__content-blog-title">
-                    <h1 class="blog-title"><span class="mah">mah</span><span class="muda">muda</span></h1>
-                    <span class="header__content-blog-subtitle">Creative Live Style Blog</span>
-                </div>
-                <div class="header__content-social">
-                    <a href="#">
-                        <div class="header__content-social-insta"></div>
-                    </a>
-                    <a href="#">
-                        <div class="header__content-social-twitter"></div>
-                    </a>
-                    <a href="#">
-                        <div class="header__content-social-youtube"></div>
-                    </a>
-                    <a href="#">
-                        <div class="header__content-social-facebook"></div>
-                    </a>
-                </div>
-            </div>
-            <nav class="header__main-navigation">
+					<div class="burger_menu">
+						<span class="burger_menu__close-btn">✖</span>
+						<ul class="burger_menu-navigation-list">
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">HOME</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="/food.html">FOOD</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">DRINK</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">LIFE</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">RECIPES</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">TRAVEL</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">ABOUT</a>
+							</li>
+							<li class="burger_menu-navigation-list_item">
+								<a href="#">CONTACT</a>
+							</li>
+						</ul>
+					</div>
 
-                <p class="burger_menu-btn-opener">
-                    MENU
-                </p>
-                
-                <div class="burger_menu ">
-                    <span class="burger_menu__close-btn">✖</span>
-                    <ul class="burger_menu-navigation-list">
-                        <li class="burger_menu-navigation-list_item"><a href="#">HOME</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="/food.html">FOOD</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="#">DRINK</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="#">LIFE</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="#">RECIPES</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="#">TRAVEL</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="#">ABOUT</a></li>
-                        <li class="burger_menu-navigation-list_item"><a href="#">CONTACT</a></li>
-                    </ul>
-                    
-                </div>
+					<ul class="header__main-navigation-list">
+						<li class="header__main-navigation-list_item">
+							<a class="active" href="#">HOME</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="/food.html">FOOD</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="#">DRINK</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="#">LIFE</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="#">RECIPES</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="#">TRAVEL</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="#">ABOUT</a>
+						</li>
+						<li class="header__main-navigation-list_item">
+							<a href="#">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--/ HEADER + NAVIGATION -->
 
-                <ul class="header__main-navigation-list">
-                    <li class="header__main-navigation-list_item"><a class="active" href="#">HOME</a></li>
-                    <li class="header__main-navigation-list_item"><a href="/food.html">FOOD</a></li>
-                    <li class="header__main-navigation-list_item"><a href="#">DRINK</a></li>
-                    <li class="header__main-navigation-list_item"><a href="#">LIFE</a></li>
-                    <li class="header__main-navigation-list_item"><a href="#">RECIPES</a></li>
-                    <li class="header__main-navigation-list_item"><a href="#">TRAVEL</a></li>
-                    <li class="header__main-navigation-list_item"><a href="#">ABOUT</a></li>
-                    <li class="header__main-navigation-list_item"><a href="#">CONTACT</a></li>
-                </ul>
+		<!-- SECTION SLAIDER -->
+		<section class="section-outter slaider">
+			<div class="section-inner">
+				<div class="slaider__big-slide_container">
+					<div class="slaider__button-right">></div>
+					<div class="slaider__button-left"><</div>
 
-            </nav>
-        </div>
-    </header>
-    <!--/ HEADER + NAVIGATION -->
+					<div class="slaider__big-slide big-slide-1 active">
+						<div class="slaider__content">
+							<div class="title">TRAVEL</div>
+							<div class="slaider__content_subtitle subtitle">
+								Voluptas assumenda sunt omnis modi ut ut
+							</div>
+						</div>
+					</div>
+					<div class="slaider__big-slide big-slide-2">
+						<div class="slaider__content">
+							<div class="title">TRAVEL</div>
+							<div class="slaider__content_subtitle subtitle">
+								Voluptas assumenda sunt omnis modi ut ut
+							</div>
+						</div>
+					</div>
+					<div class="slaider__big-slide big-slide-3">
+						<div class="slaider__content">
+							<div class="title">TRAVEL</div>
+							<div class="slaider__content_subtitle subtitle">
+								Voluptas assumenda sunt omnis modi ut ut
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="slaider__small-pict">
+					<div class="slaider__small-pict slide pict-1">
+						<div class="slaider__small-pict content">
+							<div class="title">TRAVEL</div>
+							<div class="subtitle">Eos voluptatem aut doloremque</div>
+						</div>
+						<div class="loader"></div>
+					</div>
+					<div class="slaider__small-pict slide pict-2">
+						<div class="slaider__small-pict content">
+							<div class="title">TRAVEL</div>
+							<div class="subtitle">
+								Fugiat in cupiditate iusto dolor dolorem
+							</div>
+						</div>
+						<div class="loader"></div>
+					</div>
+					<div class="slaider__small-pict slide pict-3">
+						<div class="slaider__small-pict content">
+							<div class="title">TRAVEL</div>
+							<div class="subtitle">Doloremque deleniti voluptatum dolorem</div>
+						</div>
+						<div class="loader"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- / SECTION SLAIDER -->
 
-    <!-- SECTION SLAIDER -->
-    <section class="section-outter slaider">
-        <div class="section-inner">
-            <div class="slaider__big-slide_container">
-                <div class="slaider__button-right"> > </div>
-                <div class="slaider__button-left"> < </div>
-                
-                <div class="slaider__big-slide big-slide-1 active">
-                    <div class="slaider__content">
-                        <div class="title">TRAVEL</div>
-                        <div class="slaider__content_subtitle subtitle">Voluptas assumenda sunt omnis modi ut ut</div>
-                    </div>
-                </div> 
-                <div class="slaider__big-slide big-slide-2">
-                    <div class="slaider__content">
-                        <div class="title">TRAVEL</div>
-                        <div class="slaider__content_subtitle subtitle">Voluptas assumenda sunt omnis modi ut ut</div>
-                    </div>
-                </div>
-                <div class="slaider__big-slide big-slide-3">
-                    <div class="slaider__content">
-                        <div class="title">TRAVEL</div>
-                        <div class="slaider__content_subtitle subtitle">Voluptas assumenda sunt omnis modi ut ut</div>
-                    </div>
-                </div>
-            </div>
-            
+		<!-- SECTION LATEST POST -->
+		<section class="section-outter latest-posts">
+			<div class="section-inner">
+				<h2 class="section_header">LATESTS POSTS</h2>
+				<div class="latest-posts__posts-container">
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-1"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Similique fugit occaecati dolor ipsum ducimus
+							</div>
+						</div>
+					</div>
 
-            <div class="slaider__small-pict">
-                <div class="slaider__small-pict slide pict-1">
-                    <div class="slaider__small-pict content">
-                        <div class="title">TRAVEL</div>
-                        <div class="subtitle">Eos voluptatem aut doloremque</div>
-                    </div>
-                </div>
-                <div class="slaider__small-pict slide pict-2">
-                    <div class="slaider__small-pict content">
-                        <div class="title">TRAVEL</div>
-                        <div class="subtitle">Fugiat in cupiditate iusto dolor
-                            dolorem</div>
-                    </div>
-                </div>
-                <div class="slaider__small-pict slide pict-3">
-                    <div class="slaider__small-pict content">
-                        <div class="title">TRAVEL</div>
-                        <div class="subtitle">Doloremque deleniti voluptatum
-                            dolorem</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / SECTION SLAIDER -->
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-2"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-3"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
-    <!-- SECTION LATEST POST -->
-    <section class="section-outter latest-posts">
-        <div class="section-inner">
-            <h2 class="section_header">LATESTS POSTS</h2>
-            <div class="latest-posts__posts-container">
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-4"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-1"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Similique fugit occaecati dolor ipsum ducimus
-                        </div>
-                    </div>
-                </div>
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-5"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-6"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-2"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-7"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-3"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-8"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-4"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+					<div class="latest-posts__post">
+						<div class="latest-posts__post_pict post-9"></div>
+						<div class="latest-posts__post-content">
+							<div class="title"><a href="#">TRAVEL</a></div>
+							<div class="latest-posts__post-content_autor">
+								<a href="#" class="autor">John Doe</a>
+								<span class="post-date">15 Sep, 2018</span>
+							</div>
+							<div class="latest-posts__post-content_subtitle">
+								Quaerat temporibus sunt et quia sed id
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="latest__posts_paginator">
+					<button class="latest__posts_paginator_item">
+						<a href="#">PREVIOUS</a>
+					</button>
+					<button class="latest__posts_paginator_item">
+						<a href="#">1</a>
+					</button>
+					<button class="latest__posts_paginator_item paginator_active">
+						<a href="#">2</a>
+					</button>
+					<button class="latest__posts_paginator_item">
+						<a href="#">3</a>
+					</button>
+					<button class="latest__posts_paginator_item">
+						<a href="#">...</a>
+					</button>
+					<button class="latest__posts_paginator_item">
+						<a href="#">6</a>
+					</button>
+					<button class="latest__posts_paginator_item">
+						<a href="#">NEXT</a>
+					</button>
+				</div>
+			</div>
+		</section>
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-5"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+		<!-- / SECTION LATEST POSTS -->
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-6"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+		<!-- INSTAGRAM FEED -->
+		<section class="section-outter insta-feed">
+			<div class="section-inner">
+				<h2 class="section_header insta-feed">INSTAGRAM FEED</h2>
+				<div class="insta-feed__container">
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-1.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-2.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-3.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-4.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-5.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-6.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-7.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+					<div class="insta-feed__item">
+						<a href="#">
+							<img
+								src="./img/instaFeed/blog-thumb-8.webp"
+								alt="insta-feed-post"
+								class="ininsta-feed__item_post"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- / INSTAGRAM FEED -->
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-7"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+		<!-- FOOTER -->
+		<footer class="section-outter footer">
+			<div class="section-inner">
+				<div class="footer-container">
+					<div class="footer__about-us">
+						<div class="footer__title">ABOUT US</div>
+						<div class="footer__about-us_subtitle">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+							veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+							ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+						</div>
+					</div>
+					<div class="footer__contacts">
+						<div class="footer__contacts_email-updates">
+							<div class="footer__title">NEVER MISS ANY UPDATE</div>
+							<form class="footer__contacts_form">
+								<input
+									class="footer__email"
+									placeholder="Enter Your Email Address"
+									required
+									type="text"
+								/>
+								<button class="footer__email_submit">
+									<img
+										src="./img/assets/mail_logo.svg"
+										width="50"
+										height="40"
+										alt="email-logo"
+									/>
+								</button>
+							</form>
+						</div>
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-8"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+						<div class="footer__socials">
+							<div class="footer__title">FOLLOW US</div>
+							<div class="footer__socials_icons">
+								<a href="#">
+									<div class="header__content-social-insta"></div>
+								</a>
+								<a href="#">
+									<div class="header__content-social-twitter"></div>
+								</a>
+								<a href="#">
+									<div class="header__content-social-youtube"></div>
+								</a>
+								<a href="#">
+									<div class="header__content-social-facebook"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__latest-posts">
+						<div class="footer__title">LATESTS POSTS</div>
+						<div class="footer__post-previev">
+							<img
+								src="./img/footer/blog-thumb-1.webp"
+								alt="footer-img"
+								class="footer__post-previev_img"
+							/>
+							<div class="footer__post-previev-content">
+								<p class="footer__post-previev_description">
+									Eos voluptatem aut doloremque
+								</p>
+								<p class="footer__post-previev_description-date">
+									17 July, 2018
+								</p>
+							</div>
+						</div>
+						<div class="footer__post-previev">
+							<img
+								src="./img/footer/blog-thumb-2.webp"
+								alt="footer-img"
+								class="footer__post-previev_img"
+							/>
+							<div class="footer__post-previev-content">
+								<p class="footer__post-previev_description">
+									Fugiat in cupiditate iusto dolor dolorem
+								</p>
+								<p class="footer__post-previev_description-date">
+									17 July, 2018
+								</p>
+							</div>
+						</div>
+						<div class="footer__post-previev">
+							<img
+								src="./img/footer/blog-thumb-3.webp"
+								alt="footer-img"
+								class="footer__post-previev_img"
+							/>
+							<div class="footer__post-previev-content">
+								<p class="footer__post-previev_description">
+									Ut adipisci ullam sit iste vel voluptatem
+								</p>
+								<p class="footer__post-previev_description-date">
+									17 July, 2018
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__copyright">
+					<p>Copyright 2018 Mahmuda | Site design by <span>Graphicslot</span></p>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER -->
 
-                <div class="latest-posts__post">
-                    <div class="latest-posts__post_pict post-9"></div>
-                    <div class="latest-posts__post-content">
-                        <div class=" title">TRAVEL</div>
-                        <div class="latest-posts__post-content_autor">
-                            <a href="#" class="autor">John Doe</a>
-                            <span class="post-date">15 Sep, 2018</span>
-                        </div>
-                        <div class="latest-posts__post-content_subtitle">Quaerat temporibus sunt et quia sed id</div>
-                    </div>
-                </div>
+		<!-- MODAL -->
+		<div class="modal__layer hidden">
+			<section class="modal ">
+				<span class="modal__close-btn">✖</span>
+				<h5 class="modal__header">Thank You for your submit!</h5>
+				<p class="modal__content">
+					You will receive the latest updates of our blog on your E-mail ('<span class="modal__span"></span>')
+				</p>
+				<p class="modal__logo">
+					<span class="mah">mah</span><span class="muda">muda</span>
+				</p>
+				<span class="header__content-blog-subtitle">Creative Live Style Blog</span>
+			</section>
+		</div>
+		<!-- / MODAL -->
 
-            </div>
-            <div class="latest__posts_paginator">
-                <button class="latest__posts_paginator_item"><a href="#" ">PREVIOUS</a></button> 
-                <button class=" latest__posts_paginator_item"><a href="#" ">1</a></button> 
-                <button class=" latest__posts_paginator_item paginator_active"><a href="#" ">2</a></button> 
-                <button class=" latest__posts_paginator_item"><a href="#" ">3</a></button> 
-                <button class=" latest__posts_paginator_item"><a href="#" ">...</a></button> 
-                <button class=" latest__posts_paginator_item"><a href="#" ">6</a></button> 
-                <button class=" latest__posts_paginator_item"><a href="#" ">NEXT</a></button> 
-            </div>
-        </div>
-    </section>
-
-    <!-- / SECTION LATEST POSTS -->  
-
-    <!-- INSTAGRAM FEED -->
-    <section class=" section-outter insta-feed">
-        <div class="section-inner">
-            <h2 class="section_header insta-feed">INSTAGRAM FEED</h2>
-            <div class="insta-feed__container">
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-1.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-2.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-3.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-4.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-5.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-6.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-7.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-                <div class="insta-feed__item">
-                    <img src="./img/instaFeed/blog-thumb-8.webp"
-                        alt="insta-feed-post" class="ininsta-feed__item_post">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / INSTAGRAM FEED -->
-
-    <!-- FOOTER -->
-    <footer class="section-outter footer">
-        <div class="section-inner">
-            <div class="footer-container">
-                <div class="footer__about-us">
-                    <div class="footer__title">ABOUT US</div>
-                    <div class="footer__about-us_subtitle">Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                        inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                        voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                    </div>
-
-                </div>
-                <div class="footer__contacts">
-                    <div class="footer__contacts_email-updates">
-                        <div class="footer__title">NEVER MISS ANY UPDATE</div>
-                        <form class="footer__contacts_form">
-                            <input class="footer__email" placeholder="Enter Your Email Address" type="text">
-                            <button class="footer__email_submit">
-                                <img src="./img/assets/mail_logo.svg" width="50" height="40" alt="email-logo">
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="footer__socials">
-                        <div class="footer__title">FOLLOW US</div>
-                        <div class="footer__socials_icons">
-                            <a href="#">
-                                <div class="header__content-social-insta"></div>
-                            </a>
-                            <a href="#">
-                                <div class="header__content-social-twitter"></div>
-                            </a>
-                            <a href="#">
-                                <div class="header__content-social-youtube"></div>
-                            </a>
-                            <a href="#">
-                                <div class="header__content-social-facebook"></div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__latest-posts">
-                    <div class="footer__title">LATESTS POSTS</div>
-                    <div class="footer__post-previev">
-                        <img src="./img/footer/blog-thumb-1.webp" alt="footer-img" class="footer__post-previev_img">
-                        <div class="footer__post-previev-content">
-                            <p class="footer__post-previev_description">Eos voluptatem aut doloremque</p>
-                            <p class="footer__post-previev_description-date">17 July, 2018</p>
-                        </div>
-                    </div>
-                    <div class="footer__post-previev">
-                        <img src="./img/footer/blog-thumb-2.webp" alt="footer-img" class="footer__post-previev_img">
-                        <div class="footer__post-previev-content">
-                            <p class="footer__post-previev_description">Fugiat in cupiditate iusto dolor dolorem</p>
-                            <p class="footer__post-previev_description-date">17 July, 2018</p>
-                        </div>
-                    </div>
-                    <div class="footer__post-previev">
-                        <img src="./img/footer/blog-thumb-3.webp" alt="footer-img" class="footer__post-previev_img">
-                        <div class="footer__post-previev-content">
-                            <p class="footer__post-previev_description">Ut adipisci ullam sit iste vel voluptatem</p>
-                            <p class="footer__post-previev_description-date">17 July, 2018</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <p>Copyright 2018 Mahmuda | Site design by <span>Graphicslot</span> </p>
-            </div>
-        </div>
-
-    </footer>
-    <!-- FOOTER -->
-
-    <script src="js/script.js"></script>
-</body>
-
+		<script src="js/script.js"></script>
+	</body>
 </html>
