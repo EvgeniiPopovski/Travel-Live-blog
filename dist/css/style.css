@@ -592,6 +592,32 @@ li {
   color: #e79e5a;
 }
 
+.breadcrumbs {
+  font-family: "Gilda Display", serif;
+  font-size: 10px;
+  color: #a6a6a6;
+}
+
+.breadcrumbs__link {
+  color: #a6a6a6;
+  text-decoration: none;
+}
+
+.breadcrumbs__link::after {
+  content: ' > ';
+  color: #a6a6a6;
+  margin: 0 10px;
+}
+
+.breadcrumbs__link:visited {
+  color: #a6a6a6;
+  text-decoration: none;
+}
+
+.breadcrumbs__last {
+  color: #e79e5a;
+}
+
 @keyframes big-Slide-Blur {
   from {
     opacity: 0;
@@ -636,6 +662,10 @@ li {
 
 .header {
   background-color: white;
+}
+
+.section-outter.header {
+  margin-bottom: 50px;
 }
 
 .header__content {
@@ -943,6 +973,7 @@ li {
 }
 
 .latest-posts__posts-container .latest-posts__post-content_autor {
+  margin-top: 5px;
   font-family: "Gilda Display", serif;
   font-size: 10px;
   color: #a6a6a6;
@@ -953,6 +984,7 @@ li {
 
 .latest-posts__posts-container .latest-posts__post-content_autor a {
   text-decoration: none;
+  color: #a6a6a6;
 }
 
 .latest-posts__posts-container .latest-posts__post-content_autor a:visited {
@@ -994,6 +1026,7 @@ li {
   display: inline-block;
   text-decoration: none;
   margin: 9px 14px;
+  color: #525252;
 }
 
 .latest__posts_paginator_item a:visited {
@@ -1194,6 +1227,34 @@ li {
 
 /*   / FOOTER */
 
+.section-outter.travel {
+  height: 330px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.section-outter.travel .section-inner.travel {
+  height: 330px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-outter.travel .section-inner.travel .travel__headeline {
+  font-family: "Gilda Display", serif;
+  color: white;
+  font-size: 64px;
+  margin: auto auto;
+  font-weight: lighter;
+}
+
+#slider {
+  background-image: url("./../img/travel/walper-parallax.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0px  auto;
+}
+
 @media (max-width: 992px) {
   .insta-feed__container {
     justify-content: flex-start;
@@ -1351,6 +1412,10 @@ li {
   .latest-posts__posts-container .latest-posts__post {
     width: 100%;
     height: auto;
+  }
+
+  .latest-posts__posts-container .latest-posts__post:nth-last-of-type(2n+1) {
+    margin: 0px auto 20px;
   }
 
   .header__main-navigation {
