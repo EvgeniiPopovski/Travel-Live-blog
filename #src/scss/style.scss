@@ -1,4 +1,6 @@
 @import "normilize";
+@import 'post';
+@import 'fonts';
 
 // COMMON
 
@@ -75,7 +77,7 @@ li {
 		font-size: 13px;
 		color: white;
 		text-decoration: none;
-		&::isited {
+		&::visited {
 			font-size: 13px;
 			width: 75px;
 			height: 25px;
@@ -177,7 +179,7 @@ li {
 
 .modal__layer {
 	position: fixed;
-	top:0;
+	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -198,9 +200,9 @@ li {
 	color: $font-color-secondary;
 	z-index: 21;
 	padding: 15px;
-	
+
 	&__close-btn {
-		align-self:flex-end;
+		align-self: flex-end;
 		font-size: 24px;
 		cursor: pointer;
 	}
@@ -223,20 +225,19 @@ li {
 	}
 }
 
-
 .breadcrumbs {
 	@include font-Gilda;
 	font-size: 10px;
 	color: $color-notice;
-	&__link{
+	&__link {
 		color: $color-notice;
 		text-decoration: none;
-		&::after{
-			content: ' > ';
+		&::after {
+			content: " > ";
 			color: $color-notice;
 			margin: 0 10px;
 		}
-		&:visited{
+		&:visited {
 			color: $color-notice;
 			text-decoration: none;
 		}
@@ -246,9 +247,7 @@ li {
 	}
 }
 
-
 // / COMMON
-
 
 // ANIMATION
 
@@ -287,16 +286,14 @@ li {
 	}
 }
 
-
 // / ANIMATION
 
 /* HEADER */
 .header {
 	background-color: white;
+	padding: 0px 15px;
 }
-.section-outter.header{
-	margin-bottom: 50px;
-}
+
 .header__content {
 	padding-top: 50px;
 	height: 170px;
@@ -346,7 +343,6 @@ li {
 	&-social {
 		display: flex;
 		justify-content: flex-end;
-		height: 35px;
 
 		&-insta,
 		&-twitter,
@@ -403,6 +399,7 @@ li {
 	margin-bottom: 65px;
 
 	.slaider__big-slide_container {
+		margin-top: 50px;
 		display: flex;
 		position: relative;
 		margin: 0px auto 40px;
@@ -557,7 +554,7 @@ li {
 /*  / SLIDER */
 
 /*  LATEST POSTS */
-.latest-posts__posts-container  {
+.latest-posts__posts-container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -709,7 +706,7 @@ li {
 		margin: 0px 0px 4px 0px;
 		transition: all 0.1s linear;
 		&:hover {
-			transform: translate(2px,-2px);
+			transform: translate(2px, -2px);
 		}
 		& img {
 			width: auto;
@@ -783,7 +780,6 @@ li {
 			}
 		}
 		.footer__post-previev {
-			flex-basis: 31.5%;
 			display: flex;
 			margin-bottom: 10px;
 			.footer__post-previev-content {
@@ -856,6 +852,10 @@ li {
 }
 
 @media (max-width: 767px) {
+	.section-outter.travel {
+		height: 220px;
+	}
+
 	.section-outter {
 		.slaider__big-slide {
 			height: 520px;
@@ -946,6 +946,27 @@ li {
 			}
 		}
 	}
+	.autor__avatar{
+		width: 100px;
+		height: 100px;
+		border: 4px solid white; 
+		border-radius: 50%;
+		background-image: url('./../img/authorAvatar/author.webp');
+		background-position: 50% 50%;
+	}
+	.section-outter.parallax {
+		.section-inner.parallax{
+			.parallax__headeline {
+				@include font-Gilda;
+				color: white;
+				font-size: 32px;
+				font-weight: lighter;
+				margin: 25px auto;
+			}
+		}
+	}
+	
+
 }
 
 @media (max-width: 574px) {
@@ -972,7 +993,7 @@ li {
 		.latest-posts__post {
 			width: 100%;
 			height: auto;
-			&:nth-last-of-type(2n+1){
+			&:nth-last-of-type(2n + 1) {
 				margin: 0px auto 20px;
 			}
 		}
@@ -998,31 +1019,41 @@ li {
 	}
 }
 
-
 //    PARALLAX
-.section-outter.travel {
+.section-outter.parallax {
 	height: 330px;
-	position: relative;
+	background-image: url("./../img/travel/walper-parallax.webp");
 	width: 100%;
 	margin-bottom: 50px;
-
-	.section-inner.travel{
-		height: 330px;
+	.section-inner.parallax {
+		height: 100%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		.travel__headeline{
+		align-items: center;
+		width: 100%;
+		.parallax__headeline {
 			@include font-Gilda;
 			color: white;
 			font-size: 64px;
-			margin: auto auto;
 			font-weight: lighter;
+			margin: 25px auto;
 		}
 	}
 }
 
 #slider {
-	background-image: url('./../img/travel/walper-parallax.webp');
 	background-repeat: no-repeat;
+	background-size: initial;
 	width: 100%;
-	margin:0px  auto;
 }
+
+.autor__avatar{
+	width: 130px;
+	height: 130px;
+	border: 4px solid white; 
+	border-radius: 50%;
+	background-image: url('./../img/authorAvatar/author.webp');
+	background-position: 50% 50%;
+}
+

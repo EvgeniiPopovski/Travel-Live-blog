@@ -12,9 +12,11 @@ function stopSubmit (event) {
 form.addEventListener("submit" , stopSubmit)
 
 const openModal = () => {
-    let email = input.value;
-    spanEmail.textContent = email;
-    modaLlayer.classList.remove('hidden')
+    if (input.value) {
+        spanEmail.textContent = input.value;
+        modaLlayer.classList.remove('hidden')
+        input.value = '';
+    }
     
 }
 

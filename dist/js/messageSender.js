@@ -13,14 +13,17 @@ form.addEventListener("submit" , stopSubmit)
 
 const openModal = () => {
     if (input.value) {
-    spanEmail.textContent = input.value;
-    modaLlayer.classList.remove('hidden')
+        spanEmail.textContent = input.value;
+        modaLlayer.classList.remove('hidden')
+        input.value = '';
     }
+    
 }
 
 const closeModal = (e) => {
     if (e.target == closeBtn || e.target == modaLlayer) {
         modaLlayer.classList.add('hidden')
+        
     }
 }
 
