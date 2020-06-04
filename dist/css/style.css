@@ -745,6 +745,64 @@ template {
   src: url("./../fonts/Montserrat-Regular.ttf");
 }
 
+.section-inner.about-us {
+  background-color: white;
+}
+
+.about-us__walper {
+  width: 100%;
+}
+
+.about-us__walper_pict {
+  width: 100%;
+}
+
+.about-us__content {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.about-us__content_title {
+  width: max-content;
+  margin: 50px auto;
+  font-family: "Gilda Display", serif;
+  font-size: 36px;
+  color: #525252;
+  font-weight: 100;
+}
+
+.about-us__content_text {
+  margin-bottom: 20px;
+  font-family: "Gilda Display", serif;
+  font-size: 14px;
+  line-height: 31px;
+  color: #525252;
+  font-weight: 100;
+}
+
+.section-outter.form.contact-us {
+  margin-top: 100px;
+}
+
+.form__header_contact-us {
+  width: max-content;
+  margin: 50px auto;
+  font-family: "Gilda Display", serif;
+  font-size: 36px;
+  color: #525252;
+  font-weight: 100;
+}
+
+.form_contact-us-text {
+  margin-bottom: 20px;
+  font-family: "Gilda Display", serif;
+  font-size: 14px;
+  line-height: 31px;
+  color: #525252;
+  font-weight: 100;
+}
+
 * {
   box-sizing: border-box;
 }

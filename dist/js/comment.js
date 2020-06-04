@@ -1,5 +1,5 @@
 const commentNumber = document.querySelector('.comments_counter');
-const comments = document.querySelectorAll('.comment__container');
+
 const mainContainer = document.querySelector('.comments__wrapper');
 // INPUTS
 
@@ -17,8 +17,8 @@ function stopSubmit (e) {
     if (nameInput.value && textInput.value) {
         appendComment(nameInput.value , textInput.value)
     }
-    
-    console.log('click')
+    let comments = document.querySelectorAll('.comment__container');
+    commentNumber.textContent = comments.length
 }
 
 function appendComment (personName, commentMessage) {
@@ -62,13 +62,13 @@ function appendComment (personName, commentMessage) {
 
     mainContainer.appendChild(commentContainer);
 
-
-
-    commentNumber.textContent = comments.length
-    console.log(commentContainer , commentAvatar , commentAvatarPict , commentContent , contentTitle , contentDate , contentText )
+    
+    nameInput.value = '';
+    textInput.value = '';
 }
 
 
 
 
 formComment.addEventListener('submit', stopSubmit)
+
